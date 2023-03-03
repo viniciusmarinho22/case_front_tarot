@@ -4,47 +4,47 @@
   "cards": [
     {
       "name": "O MAGO",
-      "image": "arcano1.jpg"
+      "image": "https://i0.wp.com/planetafuturo.org/wp-content/uploads/2020/07/tarot-mago1.jpeg?w=1080&ssl=1"
     },
     {
       "name": "A SACERDOTISA",
-      "image": "arcano2.jpg"
+      "image": "https://www.astrocentro.com.br/blog/wp-content/uploads/2013/12/sacerdotisa-tarot.jpg"
     },
     {
       "name": "A IMPERATRIZ",
-      "image": "arcano3.jpg"
+      "image": "https://odia.ig.com.br/_midias/jpg/2021/03/08/b6afa7135ff55ee26da40d6a0b8d6113-21375915.jpg"
     },
     {
       "name": "O IMPERADOR",
-      "image": "arcano4.jpg"
+      "image": "https://www.astrocentro.com.br/blog/wp-content/uploads/2013/12/o-imperador.jpg"
     },
     {
       "name": "O PAPA",
-      "image": "arcano5.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2020/12/Carta-de-Taro-O-Papa-593x1024.jpg"
     },
     {
       "name": "OS ENAMORADOS",
-      "image": "arcano6.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2017/08/Carta-de-Taro-os-Enamorados-2.jpg"
     },
     {
       "name": "O CARRO",
-      "image": "arcano7.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2020/12/Carta-de-Taro-O-Carro-576x1024.jpg"
     },
     {
       "name": "A JUSTIÇA",
-      "image": "arcano8.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2017/08/Carta-de-Taro-a-Justica-2.jpg"
     },
     {
       "name": "O EREMITA",
-      "image": "arcano9.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2017/08/Carta-de-Taro-o-Eremita-3.jpg"
     },
     {
       "name": "A RODA DA FORTUNA",
-      "image": "arcano10.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2017/08/A-RODA-DA-FORTUNA-TAROT-scaled.jpg"
     },
     {
       "name": "A FORÇA",
-      "image": "arcano11.jpg"
+      "image": "https://artesetaro.com.br/wp-content/uploads/2020/12/Carta-de-Taro-A-Forca-567x1024.jpg.jpg"
     },
     {
       "name": "O HOMEM PENDURADO",
