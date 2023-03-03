@@ -4,6 +4,8 @@ import './App.css';
 function App() {
 
   const cartas = require("../data/products")
+
+  let bananninha
   
   return (
     <div className="App">
