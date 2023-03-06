@@ -1,17 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PaginaInical from './components/PaginaInicial';
+import PaginaEmbaralhada from './components/PaginaEmbaralhada';
+import PaginaDetalheCarta from './components/PaginaDetalheCarta';
 
-function App() {
-
-  const cartas = require("../data/products")
-
-  let bananninha
+class App extends React.Component{
+ state ={
+  pagina: 1
+ }
+ 
+  começaJogo=()=>{
+    this.setState({pagina: 2})
+  } 
   
-  return (
-    <div className="App">
-      <h1>TAROT</h1>
-    </div>
-  );
+  escolheuCarta=()=>{
+    this.setState({pagina: 3})
+  }
+
+    selecionaPagina=()=>{
+
+    switch (this.state.pagina) {
+    case 1:
+      return <PaginaInical começaJogo={this.começaJogo}/>
+    case 2:
+      return <PaginaEmbaralhada/>
+    case 3:
+      return <PaginaDetalheCarta/>
+    default:
+      return "Página não encontrada!"
+    }
+  }
+
+  render(){
+    return (
+      <>
+       {this.selecionaPagina()}
+      </>
+    );
+  }
 }
 
 export default App;
