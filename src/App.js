@@ -1,43 +1,39 @@
-import './App.css';
 import React from 'react';
-import CardTarot from './components/CardTarot';
-import styled from 'styled-components';
-
-const CardContainer = styled.div`
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  row-gap: 20px;
-  /* column-gap: 10px; */
-  /* margin: 10px; */
-  background-color: purple;
-`
-const Header = styled.div`
-  background-color: purple;
-  display: flex;
-  /* text-align: center; */
-  justify-content: center;
-`
-
-const Titulo = styled.h1`
-display: flex;
-justify-content: space-between;
-`
-
+import PaginaInical from './components/PaginaInicial';
+import PaginaEmbaralhada from './components/PaginaEmbaralhada';
+import PaginaDetalheCarta from './components/PaginaDetalheCarta';
 
 class App extends React.Component{
-
+ state ={
+  pagina: 1
+ }
  
+  começaJogo=()=>{
+    this.setState({pagina: 2})
+  } 
+  
+  escolheuCarta=()=>{
+    this.setState({pagina: 3})
+  }
+
+    selecionaPagina=()=>{
+
+    switch (this.state.pagina) {
+    case 1:
+      return <PaginaInical começaJogo={this.começaJogo}/>
+    case 2:
+      return <PaginaEmbaralhada/>
+    case 3:
+      return <PaginaDetalheCarta/>
+    default:
+      return "Página não encontrada!"
+    }
+  }
+
   render(){
     return (
       <>
-        <Header>
-        <Titulo>JOGO DE TAROT</Titulo>
-        </Header>
-      <CardContainer className="App">
-        <CardTarot></CardTarot>
-      </CardContainer>
+       {this.selecionaPagina()}
       </>
     );
   }

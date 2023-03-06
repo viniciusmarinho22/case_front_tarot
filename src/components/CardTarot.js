@@ -1,16 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const CardContainer = styled.div`
-border: 1px solid yellow;
-background-color: white;
-width: 120px;
-`
-
-const Imagem = styled.img`
-width: 100px;
-height: 80%;
-`
+import { CardContainer1, CardName, Imagem } from "../Styled";
 
 
 class CardTarot extends React.Component{
@@ -19,15 +8,11 @@ class CardTarot extends React.Component{
   
     listaCartas = this.cartas.cards.map((card,i)=>{
       return (
-          <CardContainer key={i}>
+          <CardContainer1 key={i}>
             <Imagem src={card.image} alt="Minha Figura"></Imagem>
-            <div>
-
-            <h6>{card.name}</h6>
-            </div>
-          </CardContainer>
-      )
-            
+            <CardName>{card.name}</CardName>
+          </CardContainer1>
+      )      
     })
 
     render(){
