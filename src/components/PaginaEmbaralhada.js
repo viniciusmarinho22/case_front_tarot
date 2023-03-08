@@ -3,6 +3,7 @@ import { CardContainer, Header, Titulo } from "../Styled";
 import CardTarotEmbaralhado from "./CardTarotEmbaralhado";
 
 function PaginaEmbaralhada(props) {
+    
     return (
         <>
             <Header>
