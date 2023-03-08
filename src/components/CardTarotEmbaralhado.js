@@ -2,7 +2,6 @@ import React from "react";
 import { CardContainer1, Imagem } from "../Styled";
 
 function CardTarotEmbaralhado(props) {
-
   const listaCartasEmbaralhadas = props.cartasEmbaralhadas.map((card, i) => {
     return (
       <CardContainer1 key={i}>
