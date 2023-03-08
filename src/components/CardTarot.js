@@ -1,12 +1,10 @@
 import React from "react";
+import Cartas from "../constants/Cartas";
 import { CardContainer1, CardName, Imagem } from "../Styled";
 
+function CardTarot() {
 
-class CardTarot extends React.Component {
-
-    cartas = require("../tarot.json")
-
-    listaCartas = this.cartas.cards.map((card, i) => {
+    const listaCartas = Cartas().cards.map((card, i) => {
         return (
             <CardContainer1 key={i}>
                 <Imagem src={card.image} alt="Minha Figura"></Imagem>
@@ -15,12 +13,10 @@ class CardTarot extends React.Component {
         )
     })
 
-    render() {
-        return (
-            <>
-                {this.listaCartas}
-            </>
-        )
-    }
+    return (
+        <>
+            {listaCartas}
+        </>
+    )
 }
 export default CardTarot
