@@ -1,11 +1,11 @@
 import React from 'react';
-import SelecionaPagina from './components/SelecionaPagina';
+import Router from '../src/Router/Router'
 
 function App() {
 
   return (
     <>
-      {SelecionaPagina()}
+      <Router />
     </>
   );
 }

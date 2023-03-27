@@ -1,21 +1,23 @@
 import React from "react";
-import { Button, CardContainer, Header, Titulo } from "../Styled";
+import { CardContainer, Header, SubTitulo, Titulo } from "../Styled";
 import CardTarot from "../components/CardTarot";
+import BotaoEmbaralhar from "../components/BotaoEmbralhar"
 
-function PaginaInical(props) {
-
-    const embaralhar = () => {
-        props.setValorPagina(2)
-      }
-
+function PaginaInical() {
     return (
         <>
             <Header>
-                <Titulo> 🎴JOGO DE TAROT🎴</Titulo>
+                <div>
+                  <Titulo> 🎴   JOGO DE TAROT 🎴</Titulo>
+                </div>
+                <div>
+                    <SubTitulo> Para começar, click em embaralhar! </SubTitulo>
+                </div>
+                
             </Header>
             <CardContainer>
-                <CardTarot/>
-                <Button onClick={embaralhar}><i>EMBARALHAR</i></Button>
+                <CardTarot />
+                <BotaoEmbaralhar />
             </CardContainer>
         </>
     )
