@@ -13,10 +13,11 @@ export const Header = styled.div`
   background-color: purple;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `
 export const Titulo = styled.h1`
 display: flex;
-justify-content: space-between;
+justify-content: center;
 `
 export const Button = styled.button`
 background-color: white ;
@@ -53,4 +54,9 @@ export const ContainerDetalhes = styled.div`
 `
 export const Texto = styled.p`
   color: white;
+`
+
+export const SubTitulo = styled.h4`
+display: flex;
+justify-content: center;
 `

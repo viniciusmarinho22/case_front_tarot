@@ -1,4 +1,4 @@
-function Cartas(){
+function Cartas() {
     const cartas = require("../tarot.json")
     return cartas
 }
